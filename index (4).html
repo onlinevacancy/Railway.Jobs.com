@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>RRB ALP Recruitment 2026 | 11127 Pointsman Assistant Loco Pilot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #0b1a33;
+      line-height: 1.5;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    /* top bar — mobile first, scrollable */
+    .top-bar {
+      background: #0e1a3a;
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 0.7rem;
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      align-items: center;
+      gap: 8px 16px;
+      border-bottom: 1px solid #1e3150;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .top-bar::-webkit-scrollbar { display: none; }
+    .top-bar a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: 0.2s;
+      font-size: 0.7rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-shrink: 0;
+    }
+    .top-bar a:hover { color: #f97316; }
+    .top-bar .right-links { display: flex; gap: 8px; flex-shrink: 0; }
+    .top-bar .blink { color: #f97316; font-weight: 600; animation: blink 1.2s infinite; }
+    @keyframes blink { 0%{opacity:1;} 50%{opacity:0.4;} 100%{opacity:1;} }
+
+    /* header */
+    .main-header {
+      background: #ffffff;
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid #e9edf4;
+      gap: 8px;
+    }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 1;
+      min-width: 0;
+    }
+    .logo-area img { height: 32px; width: auto; max-width: 120px; }
+    .badge img { height: 28px; }
+    .header-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header-actions i { font-size: 1.2rem; color: #1e293b; }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(145deg, #0b1a33 0%, #1a2d4f 100%);
+      padding: 24px 0 32px;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+    .hero-breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 8px;
+      font-size: 0.7rem;
+      color: #b9c8e6;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .hero-breadcrumb a { color: #b9c8e6; text-decoration: none; }
+    .hero-breadcrumb i { margin: 0 4px; font-size: 0.5rem; }
+
+    /* main grid */
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin: 20px 0 40px;
+    }
+
+    /* job card */
+    .job-card {
+      background: white;
+      border-radius: 24px;
+      padding: 16px 14px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      border: 1px solid #edf2f7;
+      overflow: hidden;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+    .info-item {
+      background: #f8fafc;
+      padding: 8px 10px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #eef2f6;
+      min-width: 0;
+    }
+    .info-item i { color: #f97316; font-size: 0.9rem; width: 18px; flex-shrink: 0; }
+    .info-item .label { font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.2px; color: #64748b; display: block; }
+    .info-item .value { font-weight: 600; font-size: 0.75rem; word-break: break-word; }
+
+    .job-image {
+      width: 100%;
+      border-radius: 16px;
+      margin: 6px 0 14px;
+      border: 1px solid #e9edf4;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .job-description {
+      font-size: 0.9rem;
+      color: #1e293b;
+    }
+    .job-description h3 {
+      font-size: 1.2rem;
+      margin: 18px 0 10px;
+      font-weight: 600;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .job-description table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.7rem;
+      margin: 12px 0;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .job-description td, .job-description th {
+      border: 1px solid #dce2ec;
+      padding: 5px 8px;
+      text-align: left;
+    }
+    .job-description blockquote {
+      background: #f1f5f9;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border-left: 4px solid #f97316;
+      margin: 12px 0;
+      font-size: 0.85rem;
+    }
+    .job-description ul, .job-description ol { padding-left: 18px; margin: 8px 0; }
+
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid #e9edf4;
+    }
+    .social-icons { display: flex; gap: 8px; }
+    .social-icons a {
+      background: #0b1a33;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+    .btn-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .btn {
+      padding: 10px 16px;
+      border-radius: 40px;
+      font-weight: 600;
+      border: none;
+      font-size: 0.8rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex: 1 1 auto;
+      min-width: 100px;
+    }
+    .btn-primary { background: #f97316; color: white; }
+    .btn-primary:hover { background: #ea580c; }
+    .btn-secondary { background: #0b1a33; color: white; }
+    .btn-secondary:hover { background: #1a2d4f; }
+
+    /* CITY SECTION — mobile optimized */
+    .city-section {
+      margin-top: 24px;
+      background: #f1f5f9;
+      border-radius: 20px;
+      padding: 16px 14px;
+      border: 1px solid #e2e8f0;
+    }
+    .city-section h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 14px;
+      color: #0b1a33;
+    }
+    .city-section h4 i { color: #f97316; }
+    .city-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .city-card {
+      background: white;
+      border-radius: 14px;
+      padding: 10px 14px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #dce2ec;
+      gap: 8px;
+    }
+    .city-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .city-name i { color: #f97316; font-size: 0.6rem; }
+    .city-apply-btn {
+      background: #f97316;
+      color: white;
+      padding: 5px 14px;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .city-apply-btn:hover { background: #ea580c; }
+    .city-apply-btn i { font-size: 0.65rem; }
+
+    /* sidebar */
+    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-card {
+      background: white;
+      border-radius: 24px;
+      padding: 18px 16px;
+      border: 1px solid #edf2f7;
+    }
+    .sidebar-card h4 {
+      font-weight: 600;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+    .sidebar-card h4 i { color: #f97316; }
+    .quick-links a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      background: #f8fafc;
+      border-radius: 14px;
+      margin-bottom: 6px;
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 500;
+      font-size: 0.85rem;
+      border: 1px solid transparent;
+    }
+    .quick-links a i { color: #f97316; width: 18px; }
+    .category-list a {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #f1f5f9;
+      text-decoration: none;
+      color: #1e293b;
+      font-size: 0.85rem;
+    }
+    .category-list .badge-count {
+      background: #e9edf4;
+      padding: 0 12px;
+      border-radius: 40px;
+      font-size: 0.65rem;
+    }
+
+    /* footer */
+    .footer {
+      background: #0b1a33;
+      color: #b9c8e6;
+      padding: 32px 0 20px;
+      margin-top: 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 16px;
+    }
+    .footer h5 { color: white; font-weight: 600; margin-bottom: 8px; font-size: 0.9rem; }
+    .footer a { color: #b9c8e6; text-decoration: none; display: block; margin: 4px 0; font-size: 0.8rem; }
+    .footer a:hover { color: #f97316; }
+    .footer-bottom {
+      border-top: 1px solid #1e3150;
+      padding-top: 16px;
+      text-align: center;
+      font-size: 0.7rem;
+      margin-top: 20px;
+    }
+
+    /* tablet */
+    @media (min-width: 600px) {
+      .container { padding: 0 24px; }
+      .hero h1 { font-size: 2rem; }
+      .info-grid { grid-template-columns: repeat(3, 1fr); }
+      .city-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .btn-group { width: auto; flex: 0 1 auto; }
+      .main-header .logo-area img { max-width: 160px; }
+    }
+
+    @media (min-width: 1024px) {
+      .main-grid { grid-template-columns: 2fr 1fr; gap: 40px; }
+      .city-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: repeat(4, 1fr); }
+      .top-bar { flex-wrap: wrap; overflow-x: visible; white-space: normal; }
+      .top-bar .right-links { flex-shrink: 1; }
+    }
+
+    /* small phones */
+    @media (max-width: 420px) {
+      .info-grid { grid-template-columns: 1fr 1fr; gap: 6px; }
+      .info-item { padding: 6px 8px; }
+      .info-item .value { font-size: 0.7rem; }
+      .city-card { flex-direction: row; align-items: center; padding: 8px 12px; }
+      .city-apply-btn { padding: 4px 12px; font-size: 0.65rem; }
+      .job-description table { font-size: 0.6rem; }
+      .hero h1 { font-size: 1.3rem; }
+      .btn { font-size: 0.75rem; padding: 8px 12px; min-width: 80px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR — scrollable on mobile -->
+<div class="top-bar">
+  <div style="display: flex; gap: 6px 14px; align-items: center; flex-shrink: 0;">
+    <a href="#"><i class="fas fa-info-circle"></i> About</a>
+    <a href="#"><i class="fas fa-handshake"></i> Partner</a>
+    <a href="#"><i class="fas fa-chalkboard-teacher"></i> Instructor</a>
+    <a href="#"><i class="fas fa-shield-alt"></i> No Guarantee</a>
+    <a href="#"><i class="fas fa-briefcase"></i> Jobs</a>
+  </div>
+  <div class="right-links">
+    <a href="#"><i class="fas fa-credit-card"></i> Payment</a>
+    <a href="#" class="blink"><i class="fas fa-headset"></i> Help</a>
+    <a href="#"><i class="fas fa-user-plus"></i> Register</a>
+    <a href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<div class="main-header container">
+  <div class="logo-area">
+    <div class="badge"><img src="https://www.careerera.com/images/great_place_to_work.webp" alt="great place"></div>
+    <a href="#"><img src="https://www.careerera.com/images/careerera-logo.svg" alt="Careerera"></a>
+  </div>
+  <div class="header-actions">
+    <i class="fas fa-search"></i>
+    <i class="fas fa-th-large"></i>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>RRB ALP Recruitment 2026 <br> 11,127 Pointsman, Assistant Loco Pilot</h1>
+    <div class="hero-breadcrumb">
+      <a href="#">Home</a> <i class="fas fa-chevron-right"></i>
+      <a href="#">Government Jobs</a> <i class="fas fa-chevron-right"></i>
+      <span>RRB Pointsman, ALP 2026</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN -->
+<div class="container main-grid">
+
+  <!-- LEFT COLUMN -->
+  <div class="job-card">
+    <div class="info-grid">
+      <div class="info-item"><i class="fas fa-calendar-alt"></i><div><span class="label">Posted</span><span class="value">20 June 2026</span></div></div>
+      <div class="info-item"><i class="fas fa-calendar-check"></i><div><span class="label">Closing</span><span class="value">20 JULY 2026</span></div></div>
+      <div class="info-item"><i class="fas fa-graduation-cap"></i><div><span class="label">Qualification</span><span class="value">Graduation, 5th,8th,Diploma,10TH</span></div></div>
+      <div class="info-item"><i class="fas fa-briefcase"></i><div><span class="label">Type</span><span class="value">Permanent</span></div></div>
+      <div class="info-item"><i class="fas fa-users"></i><div><span class="label">Openings</span><span class="value">11,127</span></div></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i><div><span class="label">Location</span><span class="value">All India</span></div></div>
+    </div>
+
+    <img class="job-image" src="https://jobs.careerera.com/uploads/1773980991.png" alt="RRB ALP">
+
+    <div class="job-description">
+      <h3><i class="fas fa-file-alt" style="color:#f97316;"></i> Job Description</h3>
+      <p>The Railway Recruitment Boards has announced a massive drive for <strong>Pointsman And Assistant Loco Pilot</strong> under <strong>CEN No. 01/2026</strong>, offering <strong>11,127 vacancies</strong> across India. Initial pay ₹19,900 (Level-2).</p>
+      <p>Online application: <strong>18 Jul – 20 Jul 2026</strong>. Age: 18–30 years (relaxation as per rules).</p>
+      <blockquote><strong>Advertisement no: 01/2026</strong></blockquote>
+      <p><strong>Vacancies by RRB region:</strong></p>
+      <table>
+        <tr><td>RRB Ahmedabad</td><td>147</td></tr>
+        <tr><td>RRB Ajmer</td><td>718</td></tr>
+        <tr><td>RRB Prayagraj</td><td>610</td></tr>
+        <tr><td>RRB Bengaluru</td><td>200</td></tr>
+        <tr><td>RRB Bhopal</td><td>453</td></tr>
+        <tr><td>RRB Bhubaneshwar</td><td>801</td></tr>
+        <tr><td>RRB Bilaspur</td><td>522</td></tr>
+        <tr><td>RRB Chandigarh</td><td>187</td></tr>
+        <tr><td>RRB Chennal</td><td>186</td></tr>
+        <tr><td>RRB Gorakhpur</td><td>105</td></tr>
+        <tr><td>RRB Guwahati</td><td>676</td></tr>
+        <tr><td>RRB Jammu-Srinagar</td><td>400</td></tr>
+        <tr><td>RRB Kolkata</td><td>841</td></tr>
+        <tr><td>RRB Malda</td><td>559</td></tr>
+        <tr><td>RRB Mumbai</td><td>1193</td></tr>
+        <tr><td>RRB Muzaffarpur</td><td>42</td></tr>
+        <tr><td>RRB Patna</td><td>103</td></tr>
+        <tr><td>RRB Ranchi</td><td>1280</td></tr>
+        <tr><td>RRB Secunderabad</td><td>1420</td></tr>
+        <tr><td>RRB Siliguri</td><td>600</td></tr>
+        <tr><td>RRB Thiruvananthapuram</td><td>64</td></tr>
+      </table>
+      <p><strong>Eligibility:</strong> Matric/SSLC + ITI, 5th 8th 10th Class in relevant trades OR Diploma in Mechanical/Electrical/Electronics/Automobile.</p>
+      <p><strong>Selection:</strong> CBT-1, CBT-2, CBAT, Document Verification, Medical Exam.</p>
+      <p><strong>Apply online:</strong> <a href="https://www.rrbapply.gov.in/" target="_blank">https://www.rrbapply.gov.in/</a></p>
+    </div>
+
+    <!-- action bar -->
+    <div class="action-bar">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="#" class="btn btn-secondary"><i class="fas fa-book-open"></i> Exam Prep</a>
+        <a href="page2.html" target="_blank" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Apply Now</a>
+      </div>
+    </div>
+
+    <!-- CITY SECTION — each city with bold name + Apply button -->
+    <div class="city-section">
+      <h4><i class="fas fa-city"></i> City-wise Vacancies – Apply Now</h4>
+      <div class="city-grid">
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Ahmedabad</strong> (147)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Ajmer</strong> (718)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Prayagraj</strong> (610)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Bengaluru</strong> (200)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Bhopal</strong> (453)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Bhubaneswar</strong> (801)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Bilaspur</strong> (522)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Chandigarh</strong> (187)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Chennai</strong> (186)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Gorakhpur</strong> (105)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Guwahati</strong> (676)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Jammu & Srinagar</strong> (400)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Kolkata</strong> (841)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Malda</strong> (559)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Mumbai</strong> (1193)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Muzaffarpur</strong> (42)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Patna</strong> (103)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Ranchi</strong> (1280)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Secunderabad</strong> (1420)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Siliguri</strong> (600)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+        <div class="city-card"><span class="city-name"><i class="fas fa-circle"></i> <strong>Thiruvananthapuram</strong> (64)</span><a href="page2.html" target="_blank" class="city-apply-btn"><i class="fas fa-paper-plane"></i> Apply Now</a></div>
+      </div>
+      <p style="margin-top: 14px; font-size:0.75rem; color:#475569;"><i class="fas fa-info-circle" style="color:#f97316;"></i> Click any "Apply Now" to proceed (page2.html).</p>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <div class="sidebar-card">
+      <h4><i class="fas fa-th-list"></i> Quick Links</h4>
+      <div class="quick-links">
+        <a href="#"><i class="fas fa-newspaper"></i> Employment News</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Sarkari Naukri</a>
+        <a href="#"><i class="fas fa-bell"></i> Free Job Alert</a>
+        <a href="#"><i class="fas fa-file-signature"></i> Online Application</a>
+        <a href="#"><i class="fas fa-id-card"></i> Admit Card</a>
+        <a href="#"><i class="fas fa-chart-line"></i> Sarkari Result</a>
+      </div>
+    </div>
+    <div class="sidebar-card">
+      <h4><i class="fas fa-tags"></i> Related Categories</h4>
+      <div class="category-list">
+        <a href="#">Graduate Jobs <span class="badge-count">120</span></a>
+        <a href="#">Diploma Jobs <span class="badge-count">84</span></a>
+        <a href="#">ITI Jobs <span class="badge-count">63</span></a>
+        <a href="#">Railway Jobs <span class="badge-count">41</span></a>
+        <a href="#">Central Railway <span class="badge-count">18</span></a>
+        <a href="#">Southern Railway <span class="badge-count">22</span></a>
+      </div>
+    </div>
+    <div class="sidebar-card" style="background:#0b1a33; color:white; border:none;">
+      <h4 style="color:white;"><i class="fas fa-star" style="color:#f97316;"></i> Exam Prep</h4>
+      <p style="font-size:0.85rem;">Get ready with expert-curated content for RRB ALP and Pointsman 2026.</p>
+      <a href="#" class="btn btn-primary" style="width:100%; text-align:center; background:#f97316; margin-top:8px;">Start Preparation</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h5>Quick Links</h5><a href="#">About</a><a href="#">Contact</a><a href="#">Enterprise</a><a href="#">Blogs</a></div>
+      <div><h5>Programs</h5><a href="#">Doctoral</a><a href="#">Master</a><a href="#">Certificate</a></div>
+      <div><h5>Legal</h5><a href="#">Disclaimer</a><a href="#">Refund</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+      <div>
+        <h5>Follow</h5>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div>
+        <img src="https://www.careerera.com/images/great_place_to_work.webp" alt="great place" style="height:36px; margin-top:10px; max-width:100%;">
+      </div>
+    </div>
+    <div class="footer-bottom">Copyright © 2014-2026 Careerera. All Rights Reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
